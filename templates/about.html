@@ -2,15 +2,39 @@
 {% block body%}
 <h2>About</h2>
 <center>
-    <div class="w3-animate-opacity">
-        <div class="card">
-          <img src="{{ url_for('static', filename='img_avatar.png') }}" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>{{ User['name'] }}</b></h4>
-            <p>{{ User['profession'] }}</p>
-          </div>
-        </div>
-    </div>
-</center>
+    <table>
+        <tr>
+            <th width="50%">
+                <div class="w3-animate-opacity">
+                    <div class="card w3-blue" style="float: right;">
+                      <img src="{{ url_for('static', filename='image/Bill.jpg') }}" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>{{ User['name'] }}</b></h4>
+                        <p>{{ User['profession'] }}</p>
+                      </div>
+                    </div>
+                </div>
+            </th>
+            <th width="50%">
+                <div class="w3-animate-right">
+                    <div class="w3-container">
+                      <div class="w3-card-4" style="width:50%;">
+                        <header class="w3-container w3-blue">
+                          <h1>Opera expert</h1>
+                        </header>
 
+                        <div class="w3-container">
+                          <p>Available for parties, but only if theyre super fancy</p>
+                        </div>
+
+                        <footer class="w3-container w3-blue">
+                          <h5>(805) 867-5309</h5>
+                        </footer>
+                      </div>
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </table>
+</center>
 {% endblock %}

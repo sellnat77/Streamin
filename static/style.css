@@ -1,5 +1,4 @@
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 30%;
     border-radius: 5px; /* 5px rounded corners */
@@ -18,6 +17,34 @@ img {
 /* Add some padding inside the card container */
 .container {
     padding: 2px 16px;
+}
+
+.barcontainer { position:relative; padding:0 0 0 55px; }
+#sidebar {
+    position:absolute;
+    top:0; bottom:0; left:0;
+    width:50px;
+    background:#000;
+}
+
+#header { border:1px solid #000; width:100px; height:20px;
+    margin:0 0 5px 0;
+}
+#content { border:1px solid #000; width:100px; height:50px;
+    margin:5px 0 5px 0;
+}
+#footer { border:1px solid #000; width:100px; height:20px;
+    margin:5px 0 0 0;
+}
+
+table, th, td {
+    //border: 1px solid black;
+}
+
+body {
+    background-image: url("image/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 ul {
@@ -47,5 +74,5 @@ li a:hover:not(.active) {
 
 li a.active {
     color: white;
-    background-color: #4CAF50;
+    background-color: #2196F3;
 }

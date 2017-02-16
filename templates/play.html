@@ -1,0 +1,8 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h2>Play</h2>
+    <audio controls autoplay>
+            <source src="static/music/{{ music_file }}" type="audio/mp3">
+            Your browser does not support this audio format.
+    </audio>
+{% endblock %}
