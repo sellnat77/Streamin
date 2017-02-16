@@ -1,0 +1,16 @@
+{% extends "layout.html"%}
+{% block body%}
+<h2>About</h2>
+<center>
+    <div class="w3-animate-opacity">
+        <div class="card">
+          <img src="{{ url_for('static', filename='img_avatar.png') }}" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>{{ User['name'] }}</b></h4>
+            <p>{{ User['profession'] }}</p>
+          </div>
+        </div>
+    </div>
+</center>
+
+{% endblock %}
